@@ -9,5 +9,8 @@ export const config: TypeOrmModuleOptions = {
     host: 'ec2-34-227-120-79.compute-1.amazonaws.com',
     database: 'd8i8oepqkqvr8p',
     synchronize: true,
+    ssl: {
+        ca: process.env.SSL_CERT,
+    },
     entities: [VideoDevice], 
 }
