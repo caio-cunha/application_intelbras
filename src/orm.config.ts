@@ -10,7 +10,7 @@ export const config: TypeOrmModuleOptions = {
     database: 'd8i8oepqkqvr8p',
     synchronize: true,
     ssl: {
-        ca: process.env.SSL_CERT,
+        rejectUnauthorized: false,
     },
     entities: [VideoDevice], 
 }
