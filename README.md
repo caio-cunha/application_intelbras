@@ -34,5 +34,5 @@ $ npm run start:prod
 ## Test application
 
 Run the endpoints in postman (or others):
- - Import template (in ./postman dir) in the postman.
+ - Import the template (in ./postman dir) in the postman.
  - Test endpoints.
