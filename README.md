@@ -3,6 +3,12 @@
 
 Simple CRUD application in nest.js.
 
+## Requirements
+
+- Node.js
+- Nest.js
+- Docker
+
 ## Installation
 
 - git clone https://github.com/caio-cunha/application_intelbras.git
