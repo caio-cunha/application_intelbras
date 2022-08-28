@@ -1,0 +1,28 @@
+#----------------------------------------------------------------------
+version: "3"
+
+#----------------------------------------------------------------------
+# Networks
+networks:
+  backend-net:
+    driver: bridge
+
+#----------------------------------------------------------------------
+# Volumes
+volumes:
+    db-data: {}
+
+services:
+  app-db:
+      image: postgres
+      container_name: app-db
+      networks:
+        - backend-net
+      ports:
+        - "5432:5432"
+      volumes:
+        - db-data:/var/lib/postgresql/data
+      environment:
+          POSTGRES_DB: "intelbras"
+          POSTGRES_USER: "postgres"
+          POSTGRES_PASSWORD: "12345678"
